@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Catalog from "./Catalog";
+import logo from './Images/логотип i am who i am_1.jpg'
+import Menu from "./Menu";
+
+const menu = ['Catalog', 'Main page', 'Reviews'];
+const catalogName = 'Catalog';
+// const cards = [{prodName: }]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>I AM HWO I AM Brand</h1>
+        <img src={logo}/>
+        <Menu menu={menu}/>
+
+      <Catalog catalog={catalogName}/>
+
     </div>
   );
 }
