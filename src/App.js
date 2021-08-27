@@ -9,6 +9,8 @@ import logo from './Images/логотип i am who i am_1.jpg';
 import logo2 from './Images/логБ i am who i am.jpg';
 import Menu from "./Menu";
 
+function App() {
+
 const menu = ['Catalog', 'Main page', 'Reviews'];
 const catalogName = 'Catalog';
 const cards = [{prodName: 'hoody', imd: Hoody, price: 1000 },
@@ -16,7 +18,7 @@ const cards = [{prodName: 'hoody', imd: Hoody, price: 1000 },
     {prodName: 'leggings', imd: leggings, price: 1000 },
     {prodName: 'leggings2', imd: leggings, price: 1000 }];
 
-function App() {
+
   return (
     <div className="App">
         <h1>I AM HWO I AM Brand</h1>
@@ -28,7 +30,7 @@ function App() {
         <img src={leggings} alt=''/>
         <img src={leggings2} alt=''/>
         <img src={logo2} alt=''/>
-        <Menu menu={menu} alt=''/>
+        <Menu name={menu}/>
 
       <Catalog catalog={catalogName} products={cards}/>
 
